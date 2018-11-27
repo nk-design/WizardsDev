@@ -12,38 +12,11 @@ const ctx = canvas.getContext("2d");
 
 function init(){
 	const canvas = document.getElementById("canvas1");
-	addEventListener(canvas);
 	canvas.addEventListener("mousedown", drawTrue, false);
-	canvas.addEventListener("click", function(){return false;}, false);
 	canvas.addEventListener("mouseup", drawFalse, false);
 	canvas.addEventListener("mouseout", drawFalse, false);
 	canvas.addEventListener("mousemove", draw, false);
 }
-
-function addEventListener(canvas){
-	canvas.addEventListener("mousedown",mouseClickHandler);
-}
-
-function mouseClickHandler(event){
-	const canvas = event.target;
-	if(canvas && canvas.getContext){
-		const ctx = canvas.getContext("2d");
-		// ctx.clearRect(0,0, canvas.width, canvas.height);
-		ctx.fillStyle= fillColor;
-		// ctx.fillRect(event.offsetX-20, event.offsetY-20, 10,10);
-	}
-
-}
-
-// function changeColor(){
-// 	var letters = "0123456789ABCDEF";
-// 	var color = "#";
-// 	for (var i = 0; i < 6; i++) {
-// 		color += letters[Math.floor(Math.random()*16)];
-// 	}
-// 	fillColor = color;
-// }
-
 
 
 function colorSelect() {
