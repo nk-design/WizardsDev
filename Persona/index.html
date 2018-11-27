@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Persons</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="main-block">
+    <div class="inputs-block">
+        <label for="inputId">Id<input class="inputs-block__item" type="number" id="inputId"></label>
+        <label for="inputFirstName">First Name<input class="inputs-block__item" type="text" id="inputFirstName"></label>
+        <label for="inputLastName">Last Name<input class="inputs-block__item" type="text" id="inputLastName"></label>
+        <label for="inputAge">Age<input class="inputs-block__item" type="number" id="inputAge"></label>
+    </div>
+    <div class="error-block">
+        <p id="error"></p>
+    </div>
+    <div class="table-block">
+        <div class="table-block__header">
+            <div class="table-block__header-id">ID</div>
+            <div class="table-block__header-first-name">FIRST NAME</div>
+            <div class="table-block__header-last-name">LAST NAME</div>
+            <div class="table-block__header-age">AGE</div>
+        </div>
+        <div class="table-block__body" id="tableBody">
+        </div>
+    </div>
+    <div class="crud-block">
+        <button class="control-btn" id="createBtn">Create</button>
+        <button class="control-btn" id="readBtn">Read</button>
+        <button class="control-btn" id="updateBtn">Update</button>
+        <button class="control-btn" id="deleteBtn">Delete</button>
+    </div>
+    <div class="storage-block">
+        <button class="storage-btn" id="indexBtn">IndexDB</button>
+        <button class="storage-btn" id="webBtn">Web SQL</button>
+        <button class="storage-btn" id="lsBtn">Local Storage</button>
+        <button class="storage-btn" id="wsBtn">Window Storage</button>
+    </div>
+</div>
+</body>
+</html>
