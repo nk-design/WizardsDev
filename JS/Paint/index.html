@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paint Application</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- <button type="button" id="button" onclick="changeColor()">
+	COLOR
+</button> -->
+
+<div class="canvas-wrapper">
+	<canvas id="canvas1" width="670px" height="500px">
+		
+	</canvas>
+</div>
+
+<div class="option_name">
+	<span>WIDTH</span>
+</div>
+
+<div class="option">
+	<input id="size_range" type="range" min="1" max="250" value="10"/>
+	<input id="size_value" type="text" value="10"/>
+</div>
+
+<div class="colors__select" id="colors">
+    <div>COLORS</div>
+    <input type="radio" style="background:black" name="colors"/>
+    <input type="radio" style="background:rgb(200, 50, 50)"name="colors"/>
+    <input type="radio" style="background:#222" name="colors"/>
+    <input type="radio" style="background:rgb(50, 200, 50)" name="colors"/>
+    <input type="radio" style="background:#666" name="colors"/>
+    <input type="radio" style="background:rgb(50, 50, 200)" name="colors"/>
+    <input type="radio" style="background:#AAA" name="colors"/>
+    <input type="radio" style="background:rgb(200, 200, 50)" name="colors"/>
+    <input type="radio" style="background:white" name="colors"/>
+    <input type="radio" style="background:rgb(200, 50, 200)" name="colors"/>
+</div>
+
+<div id="alltools">
+  <div class="tools" id="brushes">
+    <div>BRUSHES</div>
+    <input style="background:black" id="circle" class="brush" type="radio" name="brush" checked/>
+    <input style="background:black" id="lowrate" class="brush" type="radio" name="brush"/>
+    <input style="background:black" id="rectangle" class="brush" type="radio" name="brush"/>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

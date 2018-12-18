@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Json</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+<h1>JSON Viewer</h1>
+<input type="submit" value="View JSON">
+
+<div style="padding-left: 13em;">
+		<h2 style="margin-top: 0px; font-size: 108%;">
+			<label for="jsonInput">Input:</label>
+			<small id="jsonSize"></small>
+		</h2>
+		<textarea id="jsonInput" rows="10" cols="50" placeholder="Paste your JSON here" spellcheck="false" autofocus="autofocus"></textarea>
+
+		<h2 style="font-size: 108%;">Output:</h2>
+		<output style="display: block;" for="jsonInput cmdValidate" id="jsonValidateOutput"></output>
+		<output style="display: block;" for="jsonInput jsonStrict jsonEval json2HTML json2JSON jsonTrunc jsonDate jsonData jsonSpace" id="jsonOutput"></output>
+	</div>
+
+		<p>
+			<button id="cmdRender">Render</button><br>
+		</p>	
+  <script src="script.js"></script>
+  <script src="data.json"></script>
+</body>
+</html>
